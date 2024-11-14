@@ -1,9 +1,6 @@
 version: 1
 backend:
   phases:
-    install:
-      runtime-versions:
-        nodejs: 16
     build:
       commands:
         - '# Execute Amplify CLI with the helper script'
