@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+
+}
+
+#chatroom {
+  height:500px;
+    margin-left: 13px;
+
+}
+
+.App {
+
+  display: flex;
+  align-items: center;
+/*   justify-content: center; */
+  justify-content:space-evenly;
+}
+
+.chatroom {
+
+  height: 500px;
+  width:35rem;
+
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 8px 0 rgba(0,0,0, 0.3);
+}
+
+.chatroom h3 {
+    background-color: #1947c8;
+  color: #FFF;
+  margin: 0;
+  height: 40px;
+  font-size: 20px;
+  display: flex; 
+  align-items: center;
+  justify-content: space-evenly
+}
+
+.chatroom .chats {
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 10px 0 0;
+  height: 410px;
+  overflow-y: scroll;
+}
+
+.chatroom .chats .chat {
+  background: #EDEDED;
+  position: relative;
+  padding: 5px 13px;
+  font-size: 14px;
+  border-radius: 10px;
+  list-style: none;
+  float: left;
+  clear: both;
+  margin: 10px 0;
+  width: 250px;
+  overflow-wrap: break-word;
+}
+
+
+
+.chatroom .chats .chat img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: 0px;
+}
+
+.chatroom .chats .chat.right {
+  float: right;
+  clear: both;
+  background: #E8F6F8;
+}
+
+.chatroom .chats .chat a {
+  text-decoration: none;
+  color:#3498DB;
+}
+
+.translatedMessage {
+  text-decoration: none;
+  color: red;
+}
+
+.chatroom .input {
+  height: 40px;
+  width: 100%;
+  background: #4A4A4A;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.chatroom .input input[type="text"] {
+  background: #F2F2F2;
+  outline: 0;
+  border: 2px solid #4A4A4A;
+  padding: 0 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-left: 10px;
+  height: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.chatroom .input input[type="submit"] {
+  background: transparent;
+  border: 0px solid #ffffff;
+  height: 30px;
+  width: 70px;
+  color: #ffffff;
+  font-size: 16px;
+  box-sizing: border-box;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.chatroom .input input[type="submit"]:hover {
+  background: #4A4A4A;
+  color: #FFF;
+}
+
+.DepositionContainer{
+    height: 500px;
+    /* padding-top: 15px; */
+    /* padding-left: 15px; */
+    display: flex;
+    border: 2px solid grey;
+    gap: 1rem;
+    width: 340px;
+    background: white;
+    flex-direction: column;
+}
+.Recordingcontrol{
+  background-color: #236d0b;
+  color: #fff;
+  margin: 0;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inactive{
+  background-color: #c81212;
+  color: #fff;
+  margin: 0;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.controlsbutton{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  height: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.startButton{
+  background-color: #022968;
+  color: #fff;
+  border: none;
+  padding: 7px;
+  font-size: large;
+  border-radius:5px;
+  width:6rem;
+  cursor: pointer;
+}
+.pauseButton{
+  background-color: #022968;
+font-size: large;
+  color: #fff;
+  width:6rem;
+  border-radius:5px;
+  border: none;
+  padding: 7px;
+  cursor: pointer;
+
+}
+.Depositionheader{
+  background-color: #dd7016;
+  color: #fff;
+  margin: 0;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.DepositionCode{
+     display: flex;
+    flex-direction: column;
+    border: 1px solid #c7c3c3;
+    /* grid-gap: 8px; */
+    /* gap: 8px; */
+    overflow: auto;
+    height: 80%;
+    align-items: start;
+    margin-top: 14px;
+}
+
+.DepositionCode button{
+  border:none;
+  font-size:1rem; 
+  padding: 7px;
+  background: none;
+}
+.DepositionCode button:hover{
+  background-color: #4a4a4a;
+  color: #fff;
+  cursor: pointer;
+}
+#Depositioncontainer{
+  margin-left:13px;
+}
